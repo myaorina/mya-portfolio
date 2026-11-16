@@ -1,0 +1,853 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c9aeb8;
+    font-family: 'Poppins', sans-serif;
+    color: #652c42;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 7%;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #652c42;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #652c42;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.hero {
+    position: relative;
+    margin: 20px auto;
+    width: 88%;
+    min-height: 650px;
+    background: #f0dce3;
+    text-align: center;
+    padding: 55px 20px;
+    overflow: hidden;
+}
+
+.intro {
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(90px, 15vw, 180px);
+    font-weight: 400;
+    color: #762e49;
+    line-height: 1.3;
+}
+
+.tagline {
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    width: 220px;
+    height: 260px;
+    margin: auto;
+    overflow: hidden;
+    border: 8px solid #fff8f2;
+    box-shadow: 0 10px 30px #652c4220;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-description {
+    max-width: 450px;
+    margin: 25px auto;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.discover-btn {
+    display: inline-block;
+    background: #702b43;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.discover-btn:hover {
+    background: #a75d77;
+    transform: translateY(-4px);
+}
+
+.star {
+    position: absolute;
+    font-size: 35px;
+    color: #9c526e;
+}
+
+.star-one {
+    top: 35%;
+    left: 12%;
+}
+
+.star-two {
+    top: 55%;
+    right: 12%;
+}
+
+.star-three {
+    bottom: 12%;
+    left: 18%;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 94%;
+        padding: 40px 15px;
+    }
+
+    .hero-image {
+        width: 180px;
+        height: 220px;
+    }
+}
+
+/* EDITORIAL MAGAZINE GRID */
+
+.editorial-grid {
+    width: 88%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.editorial-grid > div {
+    min-height: 230px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.editorial-grid > div:hover {
+    transform: translateY(-7px);
+}
+
+.story-card {
+    background: #f8eee8;
+    color: #702b43;
+}
+
+.journey-card {
+    background: #303b32;
+    color: #f8eee8;
+}
+
+.values-card {
+    background: #e8c4d1;
+    color: #702b43;
+}
+
+.work-card {
+    background: #f5e6d9;
+    color: #702b43;
+}
+
+.editorial-grid h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.small-heading {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.editorial-grid a {
+    color: inherit;
+    font-size: 11px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .editorial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* SCRAPBOOK DECORATIONS */
+
+.hero {
+    isolation: isolate;
+}
+
+.decor-note {
+    position: absolute;
+    background: #fff8f0;
+    padding: 12px 18px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 14px;
+    box-shadow: 3px 5px 12px #702b4320;
+    z-index: 2;
+}
+
+.note-left {
+    top: 48%;
+    left: 7%;
+    transform: rotate(-8deg);
+}
+
+.note-right {
+    top: 55%;
+    right: 7%;
+    transform: rotate(7deg);
+}
+
+.decor-star,
+.decor-heart {
+    position: absolute;
+    color: #9b526e;
+    font-size: 35px;
+}
+
+.decor-star {
+    top: 20%;
+    right: 15%;
+}
+
+.decor-heart {
+    bottom: 8%;
+    right: 20%;
+    font-size: 45px;
+}
+
+@media (max-width: 600px) {
+    .decor-note {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .note-left {
+        left: 2%;
+        top: 65%;
+    }
+
+    .note-right {
+        right: 2%;
+        top: 72%;
+    }
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+    width: 88%;
+    margin: 40px auto;
+}
+
+.about-heading {
+    background: #f0dce3;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.about-heading h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(65px, 10vw, 110px);
+    font-weight: 400;
+    color: #702b43;
+}
+
+.about-heading > p:last-child {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    padding: 55px 25px;
+    background: #f8eee8;
+}
+
+.about-photo {
+    height: 420px;
+    overflow: hidden;
+    border: 10px solid white;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.about-text p {
+    line-height: 1.9;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.about-text .handwritten {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    color: #702b43;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.about-values div {
+    background: #e8c4d1;
+    padding: 30px 18px;
+    min-height: 150px;
+}
+
+.about-values h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo {
+        height: 350px;
+    }
+
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* PROJECTS PAGE */
+
+.projects-page {
+    width: 88%;
+    margin: 40px auto;
+}
+
+.projects-heading {
+    background: #f0dce3;
+    padding: 65px 20px;
+    text-align: center;
+}
+
+.projects-heading h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(60px, 9vw, 105px);
+    font-weight: 400;
+    color: #702b43;
+    margin: 15px 0;
+}
+
+.projects-heading p:last-child {
+    font-size: 13px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding: 35px 0;
+}
+
+.project-card {
+    background: #f8eee8;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image {
+    height: 230px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.project-image span {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #702b43;
+}
+
+.project-one {
+    background: #dfb9c8;
+}
+
+.project-two {
+    background: #d6c6b6;
+}
+
+.project-three {
+    background: #c3c9b9;
+}
+
+.project-card .small-heading {
+    margin-top: 20px;
+}
+
+.project-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 12px 0;
+    color: #702b43;
+}
+
+.project-card > p:not(.small-heading) {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #702b43;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 750px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* CONTACT PAGE */
+
+.contact-page {
+    width: 88%;
+    margin: 40px auto;
+}
+
+.contact-heading {
+    background: #f0dce3;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact-heading h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(65px, 10vw, 110px);
+    font-weight: 400;
+    color: #702b43;
+    margin: 15px 0;
+}
+
+.contact-heading p:last-child {
+    font-size: 13px;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 35px 0;
+}
+
+.contact-message,
+.contact-details {
+    padding: 40px;
+    background: #f8eee8;
+}
+
+.contact-message h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 20px 0;
+    color: #702b43;
+}
+
+.contact-message > p:not(.small-heading) {
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.contact-message .handwritten {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-top: 25px;
+    color: #702b43;
+}
+
+.contact-item {
+    border-bottom: 1px solid #d9b9c5;
+    padding: 20px 0;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contact-item a,
+.contact-item p {
+    color: #702b43;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.contact-bottom {
+    background: #303b32;
+    color: #f8eee8;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.contact-bottom h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+.contact-bottom p {
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.contact-bottom span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+@media (max-width: 650px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-message,
+    .contact-details {
+        padding: 25px;
+    }
+}
+
+
+
+/* EDITORIAL HERO MAKEOVER */
+
+.hero {
+    min-height: 780px;
+    padding-top: 75px;
+}
+
+.signature {
+    position: relative;
+    z-index: 2;
+    font-size: clamp(100px, 17vw, 210px);
+    white-space: nowrap;
+    margin-bottom: -35px;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 3;
+    width: 260px;
+    height: 320px;
+    transform: rotate(3deg);
+    border: 10px solid #fffaf5;
+    box-shadow: 8px 12px 25px #702b4330;
+}
+
+.hero-description {
+    position: relative;
+    z-index: 4;
+}
+
+.decor-note {
+    z-index: 5;
+}
+
+.star {
+    z-index: 4;
+}
+
+/* SMALLER SCREENS */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 700px;
+    }
+
+    .signature {
+        font-size: clamp(75px, 18vw, 110px);
+        white-space: normal;
+        margin-bottom: 10px;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+/* MAGAZINE PANELS */
+
+.magazine-panels {
+    width: 88%;
+    margin: 30px auto 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.magazine-panels > div {
+    min-height: 300px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.magazine-cream {
+    background: #f8eee8;
+    color: #702b43;
+}
+
+.magazine-green {
+    background: #303b32;
+    color: #f8eee8;
+}
+
+.magazine-panels h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.magazine-panels p:not(.small-heading) {
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.panel-signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.journey-star {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    font-size: 45px;
+    color: #d9b2c0;
+}
+
+@media (max-width: 650px) {
+    .magazine-panels {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FLOATING PROFILE STICKER */
+
+.profile-sticker {
+    position: absolute;
+    z-index: 6;
+    top: 48%;
+    right: 8%;
+    width: 190px;
+    padding: 22px;
+    background: #fff8f0;
+    color: #702b43;
+    text-align: left;
+    transform: rotate(5deg);
+    box-shadow: 5px 8px 20px #702b4325;
+}
+
+.profile-sticker h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 12px 0;
+}
+
+.profile-sticker p:not(.small-heading) {
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.profile-sticker a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #702b43;
+    font-size: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.sticker-star {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+}
+
+@media (max-width: 600px) {
+    .profile-sticker {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 25px auto;
+        transform: rotate(2deg);
+    }
+}
+
+/* SCRAPBOOK STICKERS */
+
+.scrapbook-sticker {
+    position: absolute;
+    z-index: 5;
+}
+
+.sticker-flower {
+    top: 22%;
+    left: 10%;
+    font-size: 55px;
+    color: #a85e78;
+    transform: rotate(-15deg);
+}
+
+.sticker-label {
+    bottom: 7%;
+    right: 8%;
+    background: #702b43;
+    color: #fff8f0;
+    padding: 12px 18px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    transform: rotate(-6deg);
+}
+
+.sticker-sparkle {
+    top: 65%;
+    left: 18%;
+    font-size: 45px;
+    color: #9b526e;
+}
+
+@media (max-width: 600px) {
+    .sticker-flower {
+        left: 3%;
+        top: 15%;
+        font-size: 35px;
+    }
+
+    .sticker-sparkle {
+        left: 4%;
+        top: 60%;
+    }
+
+    .sticker-label {
+        right: 3%;
+        bottom: 3%;
+    }
+}
+/* PROJECT PHOTOGRAPH COVERS */
+
+.project-image {
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.08);
+}
+
+.project-image span {
+    position: relative;
+    z-index: 2;
+    background: #fff8f0;
+    padding: 5px 10px;
+}
